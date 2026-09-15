@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Corretor automático - Prova JavaScript</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    iframe {
+      width: 100%;
+      min-height: 780px;
+      border: 1px solid #dee2e6;
+      border-radius: .5rem;
+      background: white;
+    }
+
+    .resultado-ok {
+      border-left: 5px solid #198754;
+    }
+
+    .resultado-erro {
+      border-left: 5px solid #dc3545;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+
+  <main class="container py-4">
+
+    <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
+      <div>
+        <h1 class="h3 mb-1">Corretor automático</h1>
+        <p class="text-muted mb-0">
+          Execute esta página por um servidor local, como o Live Server.
+        </p>
+      </div>
+
+      <button id="btnExecutar" class="btn btn-primary">
+        Bóra testar 🤞
+      </button>
+    </div>
+
+    <section class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h2 class="h5">Resultado</h2>
+        <div id="nota" class="display-6">-- / 10,0</div>
+        <div id="resumo" class="text-muted">
+          Clique em "Executar correção".
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <div id="resultados"></div>
+    </section>
+
+    <details class="mb-4">
+      <summary class="fw-semibold mb-2">Visualizar aplicação</summary>
+      <iframe id="appAluno" src="../walyson/index.html"></iframe>
+    </details>
+
+  </main>
+
+  <script src="avaliador.js"></script>
+</body>
+</html>
