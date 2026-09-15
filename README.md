@@ -4,6 +4,12 @@
   <img src="walyson/mblv.png" alt="Logo MBLV - Minha Bucket List de Viagens" width="260">
 </p>
 
+## Mockup do site
+
+<p align="center">
+  <img src="walyson/image.png" alt="Mockup do site Minha Bucket List de Viagens" width="900">
+</p>
+
 ## Sobre o projeto
 
 Este projeto foi desenvolvido como uma prova prática da disciplina de JavaScript da faculdade.
